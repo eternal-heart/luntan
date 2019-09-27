@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>论坛首页</title>
+</head>
+<script src="js/jquery.min.js"></script>
+<style>
+	li
+	{
+		text-shadow: 5px 5px 5px #FF0000;
+	}
+</style>
+<body>
+
+	<table style="width:2000 border:0px>
+	<tr>
+		<td colspan:3 style="background-color:#FFA500;text-align:center;">
+			<h1>
+				<div>
+					<font size="20" >论坛</font>
+					<button id="login" style="margin-left:1250px">登录</button>
+					<button id="register" style="margin-left:10px">注册</button>
+				</div>
+			</h1>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="background-color:#FFD700;width:20px;vertical-align:top;">
+			<body>
+				<li>
+					<font size="5" >首页</font>
+				</li>
+				<li>
+					<font size="5"> 综合</font>
+				</li>
+			</body>
+		</td>
+		<td style="background-color:#eeeeee;height:600px;width:1500px;vertical-align:top;">
+			<div>
+				你好
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+	<td colspan="2" style="background-color:#FFA500;text-align:center;">
+	撒大苏打</td>
+	</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	$("#login").click(function(){
+		window.location.href="http://192.168.43.60:8080/forum/login.html"
+	})
+	$("#register").click(function(){
+		window.location.href="http://192.168.43.60:8080/forum/register.html"
+	})
+</script>
+</html>

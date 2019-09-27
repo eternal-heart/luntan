@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>µÇÂ¼</title>
+</head>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	function check(){
+		mail=$("#mail").val()
+		password=$("#password").val()
+		re=/^([0-9])+@[a-z0-9]+\.com/
+		if(mail==""){
+			alert("ÓÊÏäÎª¿Õ")
+			return false
+		}
+		else if(password==""){
+			alert("ÃÜÂëÎª¿Õ")
+			return false
+		}else if(!re.test(mail)){
+			alert(mail+"ÊÇÒ»¸öÎŞĞ§ÓÊÏä");
+			return false;
+		}
+		return true
+	}
+	
+</script>
+<body>
+	<form action="login" onsubmit="return check()" method="post">
+		<label style="margin-left: 600px;font-size: 25px;">ÓÊÏä</label><input type="text" id="mail" name="mail" style="margin-top: 150px;margin-left: 20px; padding: 10px 20px"><br>
+		<label style="margin-left: 600px;font-size: 25px;">ÃÜÂë</label><input type="password" id="password" name="password" style="margin-top: 30px;margin-left: 20px; padding: 10px 20px"><br>
+		<input type="submit" value="µÇÂ¼" style="margin-left: 600px;margin-top: 30px;font-size:25px;padding: 10px 110px"><br>
+		<a href="Change.html" style="margin-left: 600px; margin-top: 50px;font-size:20px">Íü¼ÇÃÜÂë</a>
+		<a href="register.html" style="margin-left: 100px; margin-top: 50px;font-size:20px">×¢²á</a>
+	</form>
+</body>
+</html>
